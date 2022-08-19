@@ -7,7 +7,9 @@ from csv import writer
 def find_laptop():
     # searched_model = input(f'Please enter the desire model:').lower()
     searched_model = 'legion'
-    html_text = requests.get('https://ardes.bg/laptopi/laptopi/lenovo/pamet-kapatsitet-pamet-ot-32-do-32/za-igri').text
+    # Bypass Proxy
+    proxies = {"http": None, "https": None}
+    html_text = requests.get('https://ardes.bg/laptopi/laptopi/lenovo/pamet-kapatsitet-pamet-ot-32-do-32/za-igri', proxies=proxies).text
     soup = BeautifulSoup(html_text, 'lxml')
     laptops = soup.find_all('div', class_='product')
     today = datetime.now()
