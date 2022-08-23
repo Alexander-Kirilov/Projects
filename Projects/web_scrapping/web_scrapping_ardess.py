@@ -32,6 +32,7 @@ def find_laptop():
 
 find_laptop()
 
+
 # For looping the program every 24 hours
 ''''if __name__ == '__main__':
     while True:
