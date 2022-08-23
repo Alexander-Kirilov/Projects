@@ -29,7 +29,6 @@ def find_laptop():
                 info = [laptop_name, laptop_parameters, laptop_accurate_price]
                 the_writer.writerow(info)
 
-
 find_laptop()
 
 # For looping the program every 24 hours
