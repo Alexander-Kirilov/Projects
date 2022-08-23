@@ -28,6 +28,5 @@ def find_laptop():
                 laptop_descr_final = '\n'.join([el for el in laptop_descr])
                 info = [laptop_name, laptop_descr_final, laptop_price]
                 the_writer.writerow(info)
-test
 
 find_laptop()
